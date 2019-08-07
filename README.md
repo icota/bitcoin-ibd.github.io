@@ -22,7 +22,7 @@ Bitcoin miners do not maintain the shelling point - they simply follow it wherev
 
 If Bitcoin is to scale *and still be decentralised* to the world, then we need to address the IBD - the biggest burden on node operators. If 4bn people want to use Bitcoin in a few decades time, then it is preposterous to think that Bitcoin's primary line of defence against attacks, node operators, will only number in the 10's or 100's of thousands. Millions of people should be able to run nodes. 
 
-To get the first million nodes online, the bitcoin community needs to guide Bitcoin to a point where low-power, low-cost devices can safely maintain a Bitcoin full node. Pruned nodes and even [Nuetrino](https://github.com/lightninglabs/neutrino) is not a solution since these nodes cannot participate in seeding the blockchain to new nodes. 
+To get the first million nodes online, the bitcoin community needs to guide Bitcoin to a point where low-power, low-cost devices can safely maintain a Bitcoin full node. Pruned nodes and even [Neutrino](https://github.com/lightninglabs/neutrino) is not a solution since these nodes cannot participate in seeding the blockchain to new nodes. 
 
 The blockchain is a product of waste that is a consequence of a fully audited supply and a validated transactional ledger. Every byte stored on it will be carried around forever by nodes. We must use the block space carefully and avoid wasteful transactions, especially careless uses of OP_RETURN and other data-insertion methods. 
 
@@ -46,7 +46,7 @@ Initial blockchain download time is the biggest burden on new nodes. The process
   
 Low power devices, such as a RPi connected to a 1TB SATA disk, generally have low amounts of RAM (1gb), a low-power CPU (1.2Ghz ARM) and slow disk IO of around [120mbps](https://www.amazon.com/Seagate-Portable-External-Drive-STGX1000400/dp/B07CRG7BBH/ref=sr_1_1_sspa?keywords=1tb+seagate&qid=1549926521&s=gateway&sr=8-1-spons&psc=1). 
 
-Doing a full validation from a RPi takes weeks weeks, since the IBD is constrained by validation (RAM and CPU) and disk IO, and not necessarily network download speed. The rate of innovation in these aspects (RAM, CPU and disk IO) is what is causing IBD concerns.
+Doing a full validation from a RPi takes weeks, since the IBD is constrained by validation (RAM and CPU) and disk IO, and not necessarily network download speed. The rate of innovation in these aspects (RAM, CPU and disk IO) is what is causing IBD concerns.
 
 Currently this is leading to node operators to download a pre-validated bootstrap file from another source. This is not the desired behaviour and is a massive risk to true decentralisation. An example of this is the [CASA Node](https://store.casa/lightning-node/), a largely popular RPi-based node, which ships with a pre-validated blockchain running node software decided by the CASA team. If CASA rapidly commericialises this, the next million node operators will be spoon-fed a blockchain and node ruleset decided by a profit-motivated team. This is a serious problem. 
 
